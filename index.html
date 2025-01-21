@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css">
+  <title>Photo Library Collage</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+  <div class="app">
+    <header class="header">
+      <h1 class="header-text">
+        Collage de Fotos
+      </h1>
+    </header>
+    <div class="container">
+      <div class="item item--scrollable">
+        <div class="thumbnails-container"></div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="actions">
+            <select class="select">
+              <option value="{&quot;name&quot;:&quot;Layout 4 columns&quot;,&quot;columns&quot;:4,&quot;itemWidth&quot;:240,&quot;itemHeight&quot;:240}">Layout 4 columns</option>
+              <option value="{&quot;name&quot;:&quot;Layout 8 columns&quot;,&quot;columns&quot;:8,&quot;itemWidth&quot;:240,&quot;itemHeight&quot;:240}">Layout 8 columns</option>
+            </select>
+            <button class="btn btn--primary btn-create-collage">Create collage</button>
+            <button class="btn btn--secondary btn-start-over">Start over</button>
+            <button class="btn btn--success btn-download">Download</button>
+          </div>
+          <div class="previewContainer">
+            <div class="spinnerContainer spinnerContainer--hidden">
+              <div class="spinner"></div>
+              <p class="spinnerText"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
